@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.tringe.co/sitemap.xml
+Sitemap: https://tringe.vercel.app/sitemap.xml
