@@ -73,7 +73,7 @@ const TRANSLATIONS = {
       },
       team: {
         ceoRole: "General Manager / Project Director",
-        engRole: "Director of Engineering"
+        engRole: "Construction Manager"
       }
     },
     missionVision: {
@@ -276,7 +276,7 @@ const TRANSLATIONS = {
       },
       team: {
         ceoRole: "Gerente General / Director de Proyectos",
-        engRole: "Director de Ingeniería"
+        engRole: "Gerente de Construcción"
       }
     },
     missionVision: {
