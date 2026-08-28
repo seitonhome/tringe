@@ -1,0 +1,6 @@
+# Build sources — the generated HTML is committed, Vercel just serves it.
+build/
+templates/
+build.mjs
+README.md
+node_modules/

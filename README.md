@@ -38,11 +38,13 @@ Static assets (`css/`, `js/`, `img/`, `logo.png`, `Brochure.pdf`,
 3. Regenerate and commit:
 
    ```
-   npm run build      # or: node build.mjs
+   node build.mjs
    git add -A && git commit
    ```
 
-4. Push — Vercel redeploys the static files. No build step runs on Vercel.
+4. Push — Vercel just serves the committed files (`vercel.json` sets
+   `outputDirectory: "."`; there is no build step on Vercel, and no
+   `package.json` on purpose so Vercel keeps static auto-detection).
 
 ## SEO notes
 
