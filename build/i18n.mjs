@@ -1,5 +1,15 @@
-const TRANSLATIONS = {
+// Single source of truth for every translatable string on the site.
+// Consumed at build time by build.mjs — NOT shipped to the browser.
+export const TRANSLATIONS = {
   en: {
+    seo: {
+      homeTitle: "Tringe | Civil Engineering & Construction — Cartagena, Colombia",
+      homeDescription: "Civil engineering, construction and project management in Cartagena and Colombia's Caribbean coast. PMP-certified team, international quality standards.",
+      projectTitleSuffix: "Tringe Projects",
+      ogLocale: "en_US",
+      langLabel: "Change language"
+    },
+    a11y: { skip: "Skip to content" },
     nav: {
       home: "Home",
       services: "Services",
@@ -77,6 +87,7 @@ const TRANSLATIONS = {
       }
     },
     missionVision: {
+      sectionTitle: "Mission & Vision",
       mission: {
         title: "Mission",
         text: "To deliver the highest-quality engineering and construction solutions to our clients across Cartagena and Colombia's Caribbean coast, through qualified personnel, international standards and proven project management methodologies — ensuring safe, profitable projects delivered on time."
@@ -194,8 +205,14 @@ const TRANSLATIONS = {
         success: "Thanks! Your message has been received — we'll be in touch soon."
       }
     },
+    notFound: {
+      title: "This page could not be found",
+      text: "The link may be broken or the page may have been moved.",
+      cta: "Back to Home"
+    },
     footer: {
       tagline: "Civil engineering, construction and project management across Cartagena.",
+      brochure: "Download Brochure (PDF)",
       linksTitle: "Quick Links",
       contactTitle: "Contact",
       rights: "All rights reserved."
@@ -203,6 +220,14 @@ const TRANSLATIONS = {
   },
 
   es: {
+    seo: {
+      homeTitle: "Tringe | Ingeniería Civil y Construcción — Cartagena, Colombia",
+      homeDescription: "Ingeniería civil, construcción y gerencia de proyectos en Cartagena y la Costa Atlántica. Equipo certificado PMP y estándares de calidad internacional.",
+      projectTitleSuffix: "Proyectos Tringe",
+      ogLocale: "es_CO",
+      langLabel: "Cambiar idioma"
+    },
+    a11y: { skip: "Saltar al contenido" },
     nav: {
       home: "Inicio",
       services: "Servicios",
@@ -266,7 +291,7 @@ const TRANSLATIONS = {
     about: {
       tag: "Quiénes Somos",
       title: "Ingeniería construida sobre confianza",
-      text1: "TRINGE es una empresa que brinda soluciones en el desarrollo de proyectos de obra civil en la ciudad de Cartagena y la Costa Atlántica, apoyándonos en estándares de calidad internacional, personal calificado y tecnología de punta.",
+      text1: "Tringe es una empresa que brinda soluciones en el desarrollo de proyectos de obra civil en la ciudad de Cartagena y la Costa Atlántica, apoyándose en estándares de calidad internacional, personal calificado y tecnología de punta.",
       text2: "Nuestro compromiso es brindarle al cliente servicios oportunos y de calidad de acuerdo al alcance del proyecto. Contamos con personal certificado en PMP, PMI-CP, Lean Construction y metodologías ágiles, para garantizar proyectos rentables, seguros y hechos para durar.",
       values: {
         licensed: "Equipo Certificado PMP",
@@ -280,6 +305,7 @@ const TRANSLATIONS = {
       }
     },
     missionVision: {
+      sectionTitle: "Misión y Visión",
       mission: {
         title: "Misión",
         text: "Brindar soluciones de ingeniería y construcción de la más alta calidad a nuestros clientes en Cartagena y la Costa Atlántica, mediante personal calificado, estándares internacionales y metodologías probadas de gerencia de proyectos, garantizando obras seguras, rentables y entregadas a tiempo."
@@ -397,8 +423,14 @@ const TRANSLATIONS = {
         success: "¡Gracias! Hemos recibido tu mensaje — te contactaremos pronto."
       }
     },
+    notFound: {
+      title: "No se encontró esta página",
+      text: "El enlace puede estar roto o la página pudo haber sido movida.",
+      cta: "Volver al Inicio"
+    },
     footer: {
       tagline: "Ingeniería civil, construcción y gerencia de proyectos en Cartagena.",
+      brochure: "Descargar Brochure (PDF)",
       linksTitle: "Enlaces Rápidos",
       contactTitle: "Contacto",
       rights: "Todos los derechos reservados."

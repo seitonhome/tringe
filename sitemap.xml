@@ -1,9 +1,102 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://tringe.vercel.app/</loc>
-    <lastmod>2026-07-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tringe.vercel.app/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tringe.vercel.app/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tringe.vercel.app/"/>
+    <lastmod>2026-08-28</lastmod>
+  </url>
+  <url>
+    <loc>https://tringe.vercel.app/en/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tringe.vercel.app/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tringe.vercel.app/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tringe.vercel.app/"/>
+    <lastmod>2026-08-28</lastmod>
+  </url>
+  <url>
+    <loc>https://tringe.vercel.app/projects/torre-32-pisos.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tringe.vercel.app/projects/torre-32-pisos.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tringe.vercel.app/en/projects/torre-32-pisos.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tringe.vercel.app/projects/torre-32-pisos.html"/>
+    <lastmod>2026-08-28</lastmod>
+  </url>
+  <url>
+    <loc>https://tringe.vercel.app/en/projects/torre-32-pisos.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tringe.vercel.app/projects/torre-32-pisos.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tringe.vercel.app/en/projects/torre-32-pisos.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tringe.vercel.app/projects/torre-32-pisos.html"/>
+    <lastmod>2026-08-28</lastmod>
+  </url>
+  <url>
+    <loc>https://tringe.vercel.app/projects/murano-trade-center.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tringe.vercel.app/projects/murano-trade-center.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tringe.vercel.app/en/projects/murano-trade-center.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tringe.vercel.app/projects/murano-trade-center.html"/>
+    <lastmod>2026-08-28</lastmod>
+  </url>
+  <url>
+    <loc>https://tringe.vercel.app/en/projects/murano-trade-center.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tringe.vercel.app/projects/murano-trade-center.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tringe.vercel.app/en/projects/murano-trade-center.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tringe.vercel.app/projects/murano-trade-center.html"/>
+    <lastmod>2026-08-28</lastmod>
+  </url>
+  <url>
+    <loc>https://tringe.vercel.app/projects/edificio-nautica.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tringe.vercel.app/projects/edificio-nautica.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tringe.vercel.app/en/projects/edificio-nautica.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tringe.vercel.app/projects/edificio-nautica.html"/>
+    <lastmod>2026-08-28</lastmod>
+  </url>
+  <url>
+    <loc>https://tringe.vercel.app/en/projects/edificio-nautica.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tringe.vercel.app/projects/edificio-nautica.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tringe.vercel.app/en/projects/edificio-nautica.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tringe.vercel.app/projects/edificio-nautica.html"/>
+    <lastmod>2026-08-28</lastmod>
+  </url>
+  <url>
+    <loc>https://tringe.vercel.app/projects/gobernacion-bolivar.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tringe.vercel.app/projects/gobernacion-bolivar.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tringe.vercel.app/en/projects/gobernacion-bolivar.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tringe.vercel.app/projects/gobernacion-bolivar.html"/>
+    <lastmod>2026-08-28</lastmod>
+  </url>
+  <url>
+    <loc>https://tringe.vercel.app/en/projects/gobernacion-bolivar.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tringe.vercel.app/projects/gobernacion-bolivar.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tringe.vercel.app/en/projects/gobernacion-bolivar.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tringe.vercel.app/projects/gobernacion-bolivar.html"/>
+    <lastmod>2026-08-28</lastmod>
+  </url>
+  <url>
+    <loc>https://tringe.vercel.app/projects/refineria-cartagena.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tringe.vercel.app/projects/refineria-cartagena.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tringe.vercel.app/en/projects/refineria-cartagena.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tringe.vercel.app/projects/refineria-cartagena.html"/>
+    <lastmod>2026-08-28</lastmod>
+  </url>
+  <url>
+    <loc>https://tringe.vercel.app/en/projects/refineria-cartagena.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tringe.vercel.app/projects/refineria-cartagena.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tringe.vercel.app/en/projects/refineria-cartagena.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tringe.vercel.app/projects/refineria-cartagena.html"/>
+    <lastmod>2026-08-28</lastmod>
+  </url>
+  <url>
+    <loc>https://tringe.vercel.app/projects/puerto-velero.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tringe.vercel.app/projects/puerto-velero.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tringe.vercel.app/en/projects/puerto-velero.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tringe.vercel.app/projects/puerto-velero.html"/>
+    <lastmod>2026-08-28</lastmod>
+  </url>
+  <url>
+    <loc>https://tringe.vercel.app/en/projects/puerto-velero.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tringe.vercel.app/projects/puerto-velero.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tringe.vercel.app/en/projects/puerto-velero.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tringe.vercel.app/projects/puerto-velero.html"/>
+    <lastmod>2026-08-28</lastmod>
   </url>
 </urlset>

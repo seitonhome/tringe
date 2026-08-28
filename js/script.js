@@ -2,65 +2,41 @@
   "use strict";
 
   /* ============================================================
-     i18n
+     Language
+
+     Each language is its own pre-rendered page (/ for Spanish, /en/ for
+     English) — see build.mjs. The toggle in the navbar is a plain link to
+     the counterpart URL, so no client-side text swapping is needed here.
+     We only remember the visitor's choice (no auto-redirect — that would
+     confuse crawlers and hurt the hreflang setup).
      ============================================================ */
   const LANG_KEY = "tringe-lang";
+  const pageLang = document.documentElement.lang === "en" ? "en" : "es";
 
-  function resolvePath(obj, path) {
-    return path.split(".").reduce((acc, key) => (acc && acc[key] !== undefined ? acc[key] : null), obj);
+  try {
+    const toggle = document.getElementById("langToggle");
+    if (toggle) {
+      toggle.addEventListener("click", () => {
+        try { localStorage.setItem(LANG_KEY, pageLang === "en" ? "es" : "en"); } catch (e) {}
+      });
+    }
+    localStorage.setItem(LANG_KEY, pageLang);
+  } catch (e) {
+    /* private mode / storage disabled — ignore */
   }
-
-  function getInitialLang() {
-    const saved = localStorage.getItem(LANG_KEY);
-    if (saved === "en" || saved === "es") return saved;
-    const browserLang = (navigator.language || "en").slice(0, 2);
-    return browserLang === "es" ? "es" : "en";
-  }
-
-  let currentLang = getInitialLang();
-
-  function applyTranslations(lang) {
-    const dict = TRANSLATIONS[lang];
-    if (!dict) return;
-
-    document.querySelectorAll("[data-i18n]").forEach((el) => {
-      const value = resolvePath(dict, el.getAttribute("data-i18n"));
-      if (value !== null) el.textContent = value;
-    });
-
-    document.querySelectorAll("[data-i18n-placeholder]").forEach((el) => {
-      const value = resolvePath(dict, el.getAttribute("data-i18n-placeholder"));
-      if (value !== null) el.setAttribute("placeholder", value);
-    });
-
-    document.documentElement.lang = lang;
-    document.querySelectorAll("[data-lang-option]").forEach((el) => {
-      el.classList.toggle("active", el.getAttribute("data-lang-option") === lang);
-    });
-
-    localStorage.setItem(LANG_KEY, lang);
-    currentLang = lang;
-  }
-
-  const langToggle = document.getElementById("langToggle");
-  if (langToggle) {
-    langToggle.addEventListener("click", () => {
-      applyTranslations(currentLang === "en" ? "es" : "en");
-    });
-  }
-
-  applyTranslations(currentLang);
 
   /* ============================================================
-     Preloader
+     Preloader — hide on load, with a hard timeout fallback so a
+     slow/broken resource can never leave it covering the page.
      ============================================================ */
-  window.addEventListener("load", () => {
+  function hidePreloader() {
     const pre = document.getElementById("preloader");
-    if (pre) {
-      pre.classList.add("hidden");
-      setTimeout(() => pre.remove(), 700);
-    }
-  });
+    if (!pre || pre.classList.contains("hidden")) return;
+    pre.classList.add("hidden");
+    setTimeout(() => pre.remove(), 700);
+  }
+  window.addEventListener("load", hidePreloader);
+  setTimeout(hidePreloader, 4000);
 
   /* ============================================================
      Navbar scroll state
@@ -118,6 +94,17 @@
     { threshold: 0.15, rootMargin: "0px 0px -60px 0px" }
   );
   revealEls.forEach((el) => observer.observe(el));
+
+  // Safety net: if the observer never fires for some element (edge cases,
+  // no support), make sure nothing stays permanently invisible.
+  window.addEventListener("load", () => {
+    setTimeout(() => {
+      document.querySelectorAll(".reveal:not(.is-visible)").forEach((el) => {
+        const r = el.getBoundingClientRect();
+        if (r.top < window.innerHeight) el.classList.add("is-visible");
+      });
+    }, 600);
+  });
 
   /* ============================================================
      Contact form (client-side only — no backend wired up yet)

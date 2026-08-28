@@ -107,6 +107,16 @@ button:focus-visible{
   border-radius:4px;
 }
 
+.visually-hidden{
+  position:absolute;
+  width:1px; height:1px;
+  padding:0; margin:-1px;
+  overflow:hidden;
+  clip:rect(0 0 0 0);
+  white-space:nowrap;
+  border:0;
+}
+
 /* form fields already get a border + glow focus style below, no extra outline needed */
 .form-group input:focus-visible,
 .form-group select:focus-visible,
@@ -170,6 +180,7 @@ button:focus-visible{
 
 .eyebrow{
   display:inline-block;
+  font-family:var(--font-body);
   font-size:0.78rem;
   font-weight:700;
   letter-spacing:0.14em;
@@ -177,6 +188,7 @@ button:focus-visible{
   color:var(--blue-light);
   margin-bottom:14px;
 }
+h2.eyebrow{ line-height:1; }
 
 .badge{
   display:inline-flex;
@@ -874,7 +886,19 @@ a.info-value:hover{ color:var(--blue-light); }
   padding-bottom:56px;
 }
 .footer-logo{ height:34px; margin-bottom:16px; }
-.footer-brand p{ color:var(--text-muted); font-size:0.92rem; max-width:280px; margin-bottom:22px; }
+.footer-brand p{ color:var(--text-muted); font-size:0.92rem; max-width:280px; margin-bottom:18px; }
+.footer-brochure{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  font-size:0.86rem;
+  font-weight:500;
+  color:var(--blue-light);
+  margin-bottom:22px;
+  transition:color .3s ease;
+}
+.footer-brochure::before{ content:'↓'; font-weight:700; }
+.footer-brochure:hover{ color:var(--text); }
 .footer-social.social-row{ margin-top:0; }
 .footer-col h4{ font-size:0.9rem; margin-bottom:18px; color:var(--text); }
 .footer-col{ display:flex; flex-direction:column; gap:12px; }

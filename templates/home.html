@@ -1,28 +1,12 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="{{LANG}}">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tringe | Ingeniería Civil y Construcción — Cartagena, Colombia</title>
-<meta name="description" content="Ingeniería civil, construcción y gerencia de proyectos en Cartagena y la Costa Atlántica. Equipo certificado PMP y estándares de calidad internacional.">
+<title>{{TITLE}}</title>
+<meta name="description" content="{{DESCRIPTION}}">
 <meta name="theme-color" content="#0a0a0d">
-<link rel="canonical" href="https://tringe.vercel.app/">
-<link rel="alternate" hreflang="es" href="https://tringe.vercel.app/">
-<link rel="alternate" hreflang="en" href="https://tringe.vercel.app/en/">
-<link rel="alternate" hreflang="x-default" href="https://tringe.vercel.app/">
-
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="Tringe">
-<meta property="og:locale" content="es_CO">
-<meta property="og:locale:alternate" content="en_US">
-<meta property="og:title" content="Tringe | Ingeniería Civil y Construcción — Cartagena, Colombia">
-<meta property="og:description" content="Ingeniería civil, construcción y gerencia de proyectos en Cartagena y la Costa Atlántica. Equipo certificado PMP y estándares de calidad internacional.">
-<meta property="og:url" content="https://tringe.vercel.app/">
-<meta property="og:image" content="https://tringe.vercel.app/img/og-image.png">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Tringe | Ingeniería Civil y Construcción — Cartagena, Colombia">
-<meta name="twitter:description" content="Ingeniería civil, construcción y gerencia de proyectos en Cartagena y la Costa Atlántica. Equipo certificado PMP y estándares de calidad internacional.">
-<meta name="twitter:image" content="https://tringe.vercel.app/img/og-image.png">
+{{SEO}}
 
 <!-- Favicons -->
 <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32.png">
@@ -101,7 +85,7 @@
 </head>
 <body>
 
-<a class="skip-link" href="#main-content" data-i18n="a11y.skip">Saltar al contenido</a>
+<a class="skip-link" href="#main-content" data-i18n="a11y.skip">Skip to content</a>
 
 <!-- ================= PRELOADER ================= -->
 <div id="preloader" aria-hidden="true"><div class="loader-mark"></div></div>
@@ -114,20 +98,20 @@
     </a>
 
     <nav class="nav-links" id="navLinks">
-      <a href="#home" data-i18n="nav.home">Inicio</a>
-      <a href="#services" data-i18n="nav.services">Servicios</a>
-      <a href="#about" data-i18n="nav.about">Nosotros</a>
-      <a href="#projects" data-i18n="nav.projects">Proyectos</a>
-      <a href="#contact" data-i18n="nav.contact">Contacto</a>
+      <a href="#home" data-i18n="nav.home">Home</a>
+      <a href="#services" data-i18n="nav.services">Services</a>
+      <a href="#about" data-i18n="nav.about">About</a>
+      <a href="#projects" data-i18n="nav.projects">Projects</a>
+      <a href="#contact" data-i18n="nav.contact">Contact</a>
     </nav>
 
     <div class="navbar-actions">
-      <a class="lang-toggle" id="langToggle" href="/en/" hreflang="en" aria-label="Cambiar idioma">
+      <a class="lang-toggle" id="langToggle" href="{{ALT_URL}}" hreflang="{{ALT_LANG}}" aria-label="{{LANG_LABEL}}">
         <span class="lang-option" data-lang-option="en">EN</span>
         <span class="lang-sep">/</span>
-        <span class="lang-option active" data-lang-option="es">ES</span>
+        <span class="lang-option" data-lang-option="es">ES</span>
       </a>
-      <a href="#contact" class="btn btn-primary btn-sm" data-i18n="nav.cta">Cotizar</a>
+      <a href="#contact" class="btn btn-primary btn-sm" data-i18n="nav.cta">Get a Quote</a>
       <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
@@ -144,20 +128,22 @@
   <div class="hero-grid" aria-hidden="true"></div>
 
   <div class="container hero-inner">
-    <span class="badge reveal" data-i18n="hero.badge">Ingeniería Especializada</span>
+    <span class="badge reveal" data-i18n="hero.badge">Specialized Engineering</span>
     <h1 class="hero-title reveal" style="transition-delay:.08s">
-      <span data-i18n="hero.title1">Construimos espacios que</span>
-      <span class="text-gradient" data-i18n="hero.title2">duran toda la vida.</span>
+      <span data-i18n="hero.title1">Building spaces that</span>
+      <span class="text-gradient" data-i18n="hero.title2">last a lifetime.</span>
     </h1>
-    <p class="hero-subtitle reveal" style="transition-delay:.16s" data-i18n="hero.subtitle">Ingeniería civil, construcción y gerencia de proyectos — con estándares de calidad internacional en Cartagena y la Costa Caribe.</p>
+    <p class="hero-subtitle reveal" style="transition-delay:.16s" data-i18n="hero.subtitle">
+      Civil engineering, construction and project management — delivered with international quality standards across Cartagena and Colombia's Caribbean coast.
+    </p>
     <div class="hero-actions reveal" style="transition-delay:.24s">
-      <a href="#contact" class="btn btn-primary" data-i18n="hero.cta1">Cotización Gratis</a>
-      <a href="#services" class="btn btn-outline" data-i18n="hero.cta2">Nuestros Servicios</a>
+      <a href="#contact" class="btn btn-primary" data-i18n="hero.cta1">Get a Free Quote</a>
+      <a href="#services" class="btn btn-outline" data-i18n="hero.cta2">Our Services</a>
     </div>
   </div>
 
   <a href="#services" class="scroll-cue" aria-label="Scroll down">
-    <span data-i18n="hero.scroll">Desplázate</span>
+    <span data-i18n="hero.scroll">Scroll</span>
     <i></i>
   </a>
 </section>
@@ -166,9 +152,9 @@
 <section class="services" id="services">
   <div class="container">
     <div class="section-head reveal">
-      <span class="eyebrow" data-i18n="services.tag">Qué Hacemos</span>
-      <h2 data-i18n="services.title">Servicios integrales, un solo aliado de confianza</h2>
-      <p data-i18n="services.subtitle">Desde el primer boceto hasta el acabado final, cubrimos cada oficio que tu proyecto necesita.</p>
+      <span class="eyebrow" data-i18n="services.tag">What We Do</span>
+      <h2 data-i18n="services.title">Comprehensive services, one trusted partner</h2>
+      <p data-i18n="services.subtitle">From the first sketch to the final finish, we cover every trade your project needs.</p>
     </div>
 
     <div class="services-grid">
@@ -177,72 +163,72 @@
         <div class="service-icon">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
         </div>
-        <h3 data-i18n="services.items.design.title">Diseño, Ingeniería y Consultoría</h3>
-        <p data-i18n="services.items.design.desc">Estudios y diseños arquitectónicos, eléctricos, hidrosanitarios, estructurales y geotécnicos, incluyendo cimentaciones profundas y control de calidad de concreto.</p>
+        <h3 data-i18n="services.items.design.title">Design, Engineering &amp; Consulting</h3>
+        <p data-i18n="services.items.design.desc">Architectural, electrical, hydro-sanitary, structural and geotechnical studies and design — including deep foundations and concrete quality control.</p>
       </div>
 
       <div class="service-card reveal">
         <div class="service-icon">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
         </div>
-        <h3 data-i18n="services.items.civilworks.title">Construcción y Mantenimiento de Obras Civiles</h3>
-        <p data-i18n="services.items.civilworks.desc">Viviendas, edificaciones, vías y urbanismo — desde obra nueva hasta remodelaciones, reparaciones y mantenimientos locativos.</p>
+        <h3 data-i18n="services.items.civilworks.title">Civil Works Construction &amp; Maintenance</h3>
+        <p data-i18n="services.items.civilworks.desc">Housing, buildings, roads and urban infrastructure — from new construction to remodels, repairs and facility maintenance.</p>
       </div>
 
       <div class="service-card reveal">
         <div class="service-icon">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg>
         </div>
-        <h3 data-i18n="services.items.planning.title">Planeación de Proyectos</h3>
-        <p data-i18n="services.items.planning.desc">Gerencia de proyectos bajo el estándar PMI: alcance, costos, cronograma, calidad, riesgos y recursos, todo bajo control.</p>
+        <h3 data-i18n="services.items.planning.title">Project Planning</h3>
+        <p data-i18n="services.items.planning.desc">PMI-standard project management: scope, cost, schedule, quality, risk and resources — fully under control.</p>
       </div>
 
       <div class="service-card reveal">
         <div class="service-icon">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"></polygon><line x1="8" y1="2" x2="8" y2="18"></line><line x1="16" y1="6" x2="16" y2="22"></line></svg>
         </div>
-        <h3 data-i18n="services.items.urbanism.title">Urbanismo</h3>
-        <p data-i18n="services.items.urbanism.desc">Planificación y diseño urbano orientados a la sostenibilidad, movilidad y calidad del espacio público y privado.</p>
+        <h3 data-i18n="services.items.urbanism.title">Urban Planning</h3>
+        <p data-i18n="services.items.urbanism.desc">Urban planning and design focused on sustainability, mobility, and the quality of public and private space.</p>
       </div>
 
       <div class="service-card reveal">
         <div class="service-icon">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon></svg>
         </div>
-        <h3 data-i18n="services.items.geotech.title">Estudios Geotécnicos</h3>
-        <p data-i18n="services.items.geotech.desc">Análisis de estabilidad de taludes, mejoramiento de suelos y monitoreo geotécnico para construir sobre terreno seguro.</p>
+        <h3 data-i18n="services.items.geotech.title">Geotechnical Studies</h3>
+        <p data-i18n="services.items.geotech.desc">Slope stability analysis, soil improvement, and geotechnical monitoring — building on solid, well-understood ground.</p>
       </div>
 
       <div class="service-card reveal">
         <div class="service-icon">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
         </div>
-        <h3 data-i18n="services.items.oversight.title">Interventoría</h3>
-        <p data-i18n="services.items.oversight.desc">Control, seguimiento y verificación técnica, jurídica y financiera para garantizar el cumplimiento contractual del proyecto.</p>
+        <h3 data-i18n="services.items.oversight.title">Project Oversight</h3>
+        <p data-i18n="services.items.oversight.desc">Technical, legal and financial oversight to ensure the project meets every contractual commitment.</p>
       </div>
 
       <div class="service-card reveal">
         <div class="service-icon">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
         </div>
-        <h3 data-i18n="services.items.earthworks.title">Movimientos de Tierra</h3>
-        <p data-i18n="services.items.earthworks.desc">Adecuación de terreno, cortes de talud, rellenos compactados y excavación mecánica con maquinaria especializada.</p>
+        <h3 data-i18n="services.items.earthworks.title">Earthworks</h3>
+        <p data-i18n="services.items.earthworks.desc">Site grading, slope cutting, compacted fill and mechanical excavation with specialized heavy equipment.</p>
       </div>
 
       <div class="service-card reveal">
         <div class="service-icon">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
         </div>
-        <h3 data-i18n="services.items.electrical.title">Instalaciones Eléctricas</h3>
-        <p data-i18n="services.items.electrical.desc">Redes de baja y media tensión, subestaciones, tableros e iluminación — para proyectos residenciales, comerciales e industriales.</p>
+        <h3 data-i18n="services.items.electrical.title">Electrical Installations</h3>
+        <p data-i18n="services.items.electrical.desc">Low and medium voltage networks, substations, panels and lighting — for residential, commercial and industrial projects.</p>
       </div>
 
       <div class="service-card reveal">
         <div class="service-icon">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94z"></path></svg>
         </div>
-        <h3 data-i18n="services.items.metalwork.title">Metalmecánica</h3>
-        <p data-i18n="services.items.metalwork.desc">Diseño, fabricación y mantenimiento de estructuras metálicas, con soldadura MIG/MAG, TIG, arco de plasma y más.</p>
+        <h3 data-i18n="services.items.metalwork.title">Structural Steel &amp; Welding</h3>
+        <p data-i18n="services.items.metalwork.desc">Design, fabrication and maintenance of steel structures, with MIG/MAG, TIG, plasma arc and other welding processes.</p>
       </div>
 
     </div>
@@ -261,39 +247,39 @@
     </div>
 
     <div class="about-content">
-      <span class="eyebrow reveal" data-i18n="about.tag">Quiénes Somos</span>
-      <h2 class="reveal" data-i18n="about.title">Ingeniería construida sobre confianza</h2>
-      <p class="reveal" data-i18n="about.text1">Tringe es una empresa que brinda soluciones en el desarrollo de proyectos de obra civil en la ciudad de Cartagena y la Costa Atlántica, apoyándose en estándares de calidad internacional, personal calificado y tecnología de punta.</p>
-      <p class="reveal" data-i18n="about.text2">Nuestro compromiso es brindarle al cliente servicios oportunos y de calidad de acuerdo al alcance del proyecto. Contamos con personal certificado en PMP, PMI-CP, Lean Construction y metodologías ágiles, para garantizar proyectos rentables, seguros y hechos para durar.</p>
+      <span class="eyebrow reveal" data-i18n="about.tag">Who We Are</span>
+      <h2 class="reveal" data-i18n="about.title">Engineering built on trust</h2>
+      <p class="reveal" data-i18n="about.text1">Tringe delivers civil engineering and construction solutions across Cartagena and Colombia's Caribbean coast, backed by international quality standards, qualified personnel, and leading-edge technology.</p>
+      <p class="reveal" data-i18n="about.text2">We're committed to timely, quality service scoped to each project. Our team holds PMP, PMI-CP, Lean Construction and Agile certifications — ensuring every project is profitable, safe and built to last.</p>
 
       <div class="values-grid reveal">
         <div class="value-item">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
-          <span data-i18n="about.values.licensed">Equipo Certificado PMP</span>
+          <span data-i18n="about.values.licensed">PMP Certified Team</span>
         </div>
         <div class="value-item">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
-          <span data-i18n="about.values.quality">Estándares PMI y Lean Construction</span>
+          <span data-i18n="about.values.quality">PMI &amp; Lean Construction Standards</span>
         </div>
         <div class="value-item">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
-          <span data-i18n="about.values.ontime">A Tiempo y en Presupuesto</span>
+          <span data-i18n="about.values.ontime">On Time, On Budget</span>
         </div>
         <div class="value-item">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
-          <span data-i18n="about.values.safety">Seguridad Integral</span>
+          <span data-i18n="about.values.safety">Full Safety Compliance</span>
         </div>
       </div>
 
       <div class="team-grid reveal">
         <div class="team-item">
           <span class="team-name">Germán Barros Ferro</span>
-          <span class="team-role" data-i18n="about.team.ceoRole">Gerente General / Director de Proyectos</span>
+          <span class="team-role" data-i18n="about.team.ceoRole">General Manager / Project Director</span>
           <a href="mailto:gerencia@tringe.co" class="team-contact">gerencia@tringe.co</a>
         </div>
         <div class="team-item">
           <span class="team-name">Hernando Florez</span>
-          <span class="team-role" data-i18n="about.team.engRole">Gerente de Construcción</span>
+          <span class="team-role" data-i18n="about.team.engRole">Construction Manager</span>
           <a href="mailto:ingenieria@tringe.co" class="team-contact">ingenieria@tringe.co</a>
         </div>
       </div>
@@ -305,20 +291,20 @@
 <!-- ================= MISSION / VISION ================= -->
 <section class="mission-vision">
   <div class="container mv-grid">
-    <h2 class="visually-hidden" data-i18n="missionVision.sectionTitle">Misión y Visión</h2>
+    <h2 class="visually-hidden" data-i18n="missionVision.sectionTitle">Mission &amp; Vision</h2>
     <div class="mv-card reveal">
       <div class="mv-icon">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
       </div>
-      <h3 data-i18n="missionVision.mission.title">Misión</h3>
-      <p data-i18n="missionVision.mission.text">Brindar soluciones de ingeniería y construcción de la más alta calidad a nuestros clientes en Cartagena y la Costa Atlántica, mediante personal calificado, estándares internacionales y metodologías probadas de gerencia de proyectos, garantizando obras seguras, rentables y entregadas a tiempo.</p>
+      <h3 data-i18n="missionVision.mission.title">Mission</h3>
+      <p data-i18n="missionVision.mission.text">To deliver the highest-quality engineering and construction solutions to our clients across Cartagena and Colombia's Caribbean coast, through qualified personnel, international standards and proven project management methodologies — ensuring safe, profitable projects delivered on time.</p>
     </div>
     <div class="mv-card reveal">
       <div class="mv-icon">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.64-7 10-7 10 7 10 7-3.64 7-10 7-10-7-10-7z"></path><circle cx="12" cy="12" r="3"></circle></svg>
       </div>
-      <h3 data-i18n="missionVision.vision.title">Visión</h3>
-      <p data-i18n="missionVision.vision.text">Ser la firma de ingeniería y construcción de referencia en la Costa Atlántica colombiana, reconocida por la excelencia técnica, la innovación en metodologías de gestión y el compromiso con cada proyecto que construimos.</p>
+      <h3 data-i18n="missionVision.vision.title">Vision</h3>
+      <p data-i18n="missionVision.vision.text">To be the leading engineering and construction firm on Colombia's Caribbean coast, recognized for technical excellence, innovative project management, and an unwavering commitment to every project we build.</p>
     </div>
   </div>
 </section>
@@ -326,7 +312,7 @@
 <!-- ================= CLIENTS ================= -->
 <section class="clients">
   <div class="container">
-    <h2 class="eyebrow reveal clients-eyebrow" data-i18n="clients.tag">Empresas Que Confían en Nosotros</h2>
+    <h2 class="eyebrow reveal clients-eyebrow" data-i18n="clients.tag">Trusted By</h2>
     <ul class="clients-list reveal">
       <li>Cuerpos de Paz</li>
       <li>Embajada de Estados Unidos</li>
@@ -345,58 +331,58 @@
 <section class="projects" id="projects">
   <div class="container">
     <div class="section-head reveal">
-      <span class="eyebrow" data-i18n="projects.tag">Nuestro Trabajo</span>
-      <h2 data-i18n="projects.title">Proyectos que respaldan nuestra experiencia</h2>
-      <p data-i18n="projects.subtitle">Una muestra de obras de gran escala que hemos entregado. Fotos reales próximamente.</p>
+      <span class="eyebrow" data-i18n="projects.tag">Our Work</span>
+      <h2 data-i18n="projects.title">Projects that back up our experience</h2>
+      <p data-i18n="projects.subtitle">A sample of large-scale work we've delivered. Real photos coming soon.</p>
     </div>
 
     <div class="projects-grid">
-      <a href="/projects/torre-32-pisos.html" class="project-card reveal ph-1">
+      <a href="{{PROJECTS_BASE}}/torre-32-pisos.html" class="project-card reveal ph-1">
         <div class="project-overlay">
-          <span class="project-cat" data-i18n="projects.items.tower32.cat">Torre Residencial</span>
-          <h3 data-i18n="projects.items.tower32.title">Torre de 32 Pisos</h3>
-          <p class="project-stat" data-i18n="projects.items.tower32.stat">Estructura en concreto reforzado + parqueadero de 7 pisos — ~16.000 m² construidos</p>
-          <span class="project-view" data-i18n="projects.viewLabel">Ver Proyecto →</span>
+          <span class="project-cat" data-i18n="projects.items.tower32.cat">Residential Tower</span>
+          <h3 data-i18n="projects.items.tower32.title">32-Story Tower</h3>
+          <p class="project-stat" data-i18n="projects.items.tower32.stat">Reinforced concrete structure + 7-story parking garage — ~16,000 m² built</p>
+          <span class="project-view" data-i18n="projects.viewLabel">View Project →</span>
         </div>
       </a>
-      <a href="/projects/murano-trade-center.html" class="project-card reveal ph-2">
+      <a href="{{PROJECTS_BASE}}/murano-trade-center.html" class="project-card reveal ph-2">
         <div class="project-overlay">
-          <span class="project-cat" data-i18n="projects.items.murano.cat">Torre de Oficinas</span>
+          <span class="project-cat" data-i18n="projects.items.murano.cat">Office Tower</span>
           <h3 data-i18n="projects.items.murano.title">Murano Trade Center</h3>
-          <p class="project-stat" data-i18n="projects.items.murano.stat">Torre de oficinas de 33 pisos + rampa de parqueaderos de 10 pisos</p>
-          <span class="project-view" data-i18n="projects.viewLabel">Ver Proyecto →</span>
+          <p class="project-stat" data-i18n="projects.items.murano.stat">33-story office tower + 10-story parking ramp</p>
+          <span class="project-view" data-i18n="projects.viewLabel">View Project →</span>
         </div>
       </a>
-      <a href="/projects/edificio-nautica.html" class="project-card reveal ph-3">
+      <a href="{{PROJECTS_BASE}}/edificio-nautica.html" class="project-card reveal ph-3">
         <div class="project-overlay">
-          <span class="project-cat" data-i18n="projects.items.nautica.cat">Torre Residencial</span>
+          <span class="project-cat" data-i18n="projects.items.nautica.cat">Residential Tower</span>
           <h3 data-i18n="projects.items.nautica.title">Edificio Náutica</h3>
-          <p class="project-stat" data-i18n="projects.items.nautica.stat">Acabados de torre residencial de 42 pisos de apartamentos</p>
-          <span class="project-view" data-i18n="projects.viewLabel">Ver Proyecto →</span>
+          <p class="project-stat" data-i18n="projects.items.nautica.stat">Finishing work on a 42-story residential apartment tower</p>
+          <span class="project-view" data-i18n="projects.viewLabel">View Project →</span>
         </div>
       </a>
-      <a href="/projects/gobernacion-bolivar.html" class="project-card reveal ph-4">
+      <a href="{{PROJECTS_BASE}}/gobernacion-bolivar.html" class="project-card reveal ph-4">
         <div class="project-overlay">
-          <span class="project-cat" data-i18n="projects.items.governorate.cat">Institucional</span>
+          <span class="project-cat" data-i18n="projects.items.governorate.cat">Institutional</span>
           <h3 data-i18n="projects.items.governorate.title">Gobernación de Bolívar</h3>
-          <p class="project-stat" data-i18n="projects.items.governorate.stat">Construcción de la nueva sede administrativa</p>
-          <span class="project-view" data-i18n="projects.viewLabel">Ver Proyecto →</span>
+          <p class="project-stat" data-i18n="projects.items.governorate.stat">Construction of the new administrative headquarters</p>
+          <span class="project-view" data-i18n="projects.viewLabel">View Project →</span>
         </div>
       </a>
-      <a href="/projects/refineria-cartagena.html" class="project-card reveal ph-5">
+      <a href="{{PROJECTS_BASE}}/refineria-cartagena.html" class="project-card reveal ph-5">
         <div class="project-overlay">
           <span class="project-cat" data-i18n="projects.items.refinery.cat">Industrial</span>
           <h3 data-i18n="projects.items.refinery.title">Refinería de Cartagena</h3>
-          <p class="project-stat" data-i18n="projects.items.refinery.stat">Supervisión y construcción — proyecto de ampliación</p>
-          <span class="project-view" data-i18n="projects.viewLabel">Ver Proyecto →</span>
+          <p class="project-stat" data-i18n="projects.items.refinery.stat">Oversight and construction on the refinery expansion project</p>
+          <span class="project-view" data-i18n="projects.viewLabel">View Project →</span>
         </div>
       </a>
-      <a href="/projects/puerto-velero.html" class="project-card reveal ph-6">
+      <a href="{{PROJECTS_BASE}}/puerto-velero.html" class="project-card reveal ph-6">
         <div class="project-overlay">
-          <span class="project-cat" data-i18n="projects.items.puertovelero.cat">Residencial</span>
+          <span class="project-cat" data-i18n="projects.items.puertovelero.cat">Residential</span>
           <h3 data-i18n="projects.items.puertovelero.title">Edificio Puerto Velero</h3>
-          <p class="project-stat" data-i18n="projects.items.puertovelero.stat">79 apartamentos y zonas comunes — 23.000 m² construidos</p>
-          <span class="project-view" data-i18n="projects.viewLabel">Ver Proyecto →</span>
+          <p class="project-stat" data-i18n="projects.items.puertovelero.stat">79 apartments and common areas — 23,000 m² built</p>
+          <span class="project-view" data-i18n="projects.viewLabel">View Project →</span>
         </div>
       </a>
     </div>
@@ -407,9 +393,9 @@
 <section class="contact" id="contact">
   <div class="container">
     <div class="section-head reveal">
-      <span class="eyebrow" data-i18n="contact.tag">Contáctanos</span>
-      <h2 data-i18n="contact.title">Comencemos tu proyecto</h2>
-      <p data-i18n="contact.subtitle">Cuéntanos qué necesitas y te responderemos con una cotización gratuita.</p>
+      <span class="eyebrow" data-i18n="contact.tag">Get In Touch</span>
+      <h2 data-i18n="contact.title">Let's start your project</h2>
+      <p data-i18n="contact.subtitle">Tell us what you need and we'll get back to you with a free quote.</p>
     </div>
 
     <div class="contact-inner">
@@ -420,7 +406,7 @@
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
           </div>
           <div>
-            <span class="info-label" data-i18n="contact.info.phoneLabel">Teléfono</span>
+            <span class="info-label" data-i18n="contact.info.phoneLabel">Phone</span>
             <a href="tel:+573008157674" class="info-value">+57 300 815 7674</a>
           </div>
         </div>
@@ -430,7 +416,7 @@
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
           </div>
           <div>
-            <span class="info-label" data-i18n="contact.info.emailLabel">Correo</span>
+            <span class="info-label" data-i18n="contact.info.emailLabel">Email</span>
             <a href="mailto:gerencia@tringe.co" class="info-value">gerencia@tringe.co</a>
           </div>
         </div>
@@ -440,8 +426,8 @@
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
           </div>
           <div>
-            <span class="info-label" data-i18n="contact.info.addressLabel">Zona de Servicio</span>
-            <span class="info-value" data-i18n="contact.info.addressValue">Cartagena y la Costa Atlántica, Colombia</span>
+            <span class="info-label" data-i18n="contact.info.addressLabel">Service Area</span>
+            <span class="info-value" data-i18n="contact.info.addressValue">Cartagena and Colombia's Caribbean coast</span>
           </div>
         </div>
 
@@ -450,8 +436,8 @@
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
           </div>
           <div>
-            <span class="info-label" data-i18n="contact.info.hoursLabel">Horario de Atención</span>
-            <span class="info-value" data-i18n="contact.info.hoursValue">Lun–Vie: 8:00 AM – 6:00 PM · Sáb: 9:00 AM – 2:00 PM</span>
+            <span class="info-label" data-i18n="contact.info.hoursLabel">Business Hours</span>
+            <span class="info-value" data-i18n="contact.info.hoursValue">Mon–Fri: 8:00 AM – 6:00 PM · Sat: 9:00 AM – 2:00 PM</span>
           </div>
         </div>
 
@@ -465,39 +451,39 @@
       <form class="contact-form reveal" id="contactForm" novalidate>
         <div class="form-row">
           <div class="form-group">
-            <label for="name" data-i18n="contact.form.name">Nombre Completo</label>
+            <label for="name" data-i18n="contact.form.name">Full Name</label>
             <input type="text" id="name" name="name" required>
           </div>
           <div class="form-group">
-            <label for="phone" data-i18n="contact.form.phone">Teléfono</label>
+            <label for="phone" data-i18n="contact.form.phone">Phone</label>
             <input type="tel" id="phone" name="phone">
           </div>
         </div>
 
         <div class="form-group">
-          <label for="email" data-i18n="contact.form.email">Correo Electrónico</label>
+          <label for="email" data-i18n="contact.form.email">Email</label>
           <input type="email" id="email" name="email" required>
         </div>
 
         <div class="form-group">
-          <label for="service" data-i18n="contact.form.service">Servicio Requerido</label>
+          <label for="service" data-i18n="contact.form.service">Service Needed</label>
           <select id="service" name="service">
-            <option value="" data-i18n="contact.form.serviceChoose">Selecciona un servicio</option>
-            <option value="design" data-i18n="services.items.design.title">Diseño, Ingeniería y Consultoría</option>
-            <option value="civilworks" data-i18n="services.items.civilworks.title">Construcción y Mantenimiento de Obras Civiles</option>
-            <option value="planning" data-i18n="services.items.planning.title">Planeación de Proyectos</option>
-            <option value="urbanism" data-i18n="services.items.urbanism.title">Urbanismo</option>
-            <option value="geotech" data-i18n="services.items.geotech.title">Estudios Geotécnicos</option>
-            <option value="oversight" data-i18n="services.items.oversight.title">Interventoría</option>
-            <option value="earthworks" data-i18n="services.items.earthworks.title">Movimientos de Tierra</option>
-            <option value="electrical" data-i18n="services.items.electrical.title">Instalaciones Eléctricas</option>
-            <option value="metalwork" data-i18n="services.items.metalwork.title">Metalmecánica</option>
-            <option value="other" data-i18n="contact.form.serviceOther">Otro</option>
+            <option value="" data-i18n="contact.form.serviceChoose">Select a service</option>
+            <option value="design" data-i18n="services.items.design.title">Design, Engineering &amp; Consulting</option>
+            <option value="civilworks" data-i18n="services.items.civilworks.title">Civil Works Construction &amp; Maintenance</option>
+            <option value="planning" data-i18n="services.items.planning.title">Project Planning</option>
+            <option value="urbanism" data-i18n="services.items.urbanism.title">Urban Planning</option>
+            <option value="geotech" data-i18n="services.items.geotech.title">Geotechnical Studies</option>
+            <option value="oversight" data-i18n="services.items.oversight.title">Project Oversight</option>
+            <option value="earthworks" data-i18n="services.items.earthworks.title">Earthworks</option>
+            <option value="electrical" data-i18n="services.items.electrical.title">Electrical Installations</option>
+            <option value="metalwork" data-i18n="services.items.metalwork.title">Structural Steel &amp; Welding</option>
+            <option value="other" data-i18n="contact.form.serviceOther">Other</option>
           </select>
         </div>
 
         <div class="form-group">
-          <label for="message" data-i18n="contact.form.message">Detalles del Proyecto</label>
+          <label for="message" data-i18n="contact.form.message">Project Details</label>
           <textarea id="message" name="message" rows="4" required></textarea>
         </div>
 
@@ -507,11 +493,11 @@
           <input type="text" id="company" name="company" tabindex="-1" autocomplete="off">
         </div>
 
-        <button type="submit" class="btn btn-primary btn-block" data-i18n="contact.form.submit">Enviar Solicitud</button>
+        <button type="submit" class="btn btn-primary btn-block" data-i18n="contact.form.submit">Send Request</button>
 
-        <p class="form-privacy" data-i18n="contact.form.privacy">Solo usamos tu información para responder tu solicitud — nunca se comparte ni se vende.</p>
+        <p class="form-privacy" data-i18n="contact.form.privacy">We only use your information to respond to your request — it's never shared or sold.</p>
 
-        <p class="form-success" id="formSuccess" role="status" aria-live="polite" data-i18n="contact.form.success">¡Gracias! Hemos recibido tu mensaje — te contactaremos pronto.</p>
+        <p class="form-success" id="formSuccess" role="status" aria-live="polite" data-i18n="contact.form.success">Thanks! Your message has been received — we'll be in touch soon.</p>
       </form>
 
     </div>
@@ -525,8 +511,8 @@
   <div class="container footer-inner">
     <div class="footer-brand">
       <img src="/logo.png" alt="Tringe" class="footer-logo" width="480" height="480">
-      <p data-i18n="footer.tagline">Ingeniería civil, construcción y gerencia de proyectos en Cartagena.</p>
-      <a href="/Brochure.pdf" target="_blank" rel="noopener" class="footer-brochure" data-i18n="footer.brochure">Descargar Brochure (PDF)</a>
+      <p data-i18n="footer.tagline">Civil engineering, construction and project management across Cartagena.</p>
+      <a href="/Brochure.pdf" target="_blank" rel="noopener" class="footer-brochure" data-i18n="footer.brochure">Download Brochure (PDF)</a>
       <div class="social-row footer-social">
         <a href="https://wa.me/573008157674" target="_blank" rel="noopener" class="social-icon" aria-label="WhatsApp">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21l1.5-4.5A8 8 0 1 1 8 19.5z"></path><path d="M8.5 9c.3-.7.9-.6 1.4-.6.4 0 .6.1.8.5.2.5.7 1.7.7 1.9.1.2.1.4 0 .6-.2.4-.4.5-.6.8-.2.2-.4.4-.2.8.6 1 1.3 1.7 2.3 2.3.4.2.6.2.9-.1.3-.3.7-.9 1-1.2.2-.2.4-.2.7-.1.6.3 1.8.9 2 1 .3.1.5.2.5.4.1.5.1.9-.1 1.4-.3.6-1.5 1.1-2.1 1.2-.6.1-1.2.2-3.7-.8-2.9-1.2-4.7-4.1-4.9-4.3-.1-.2-1.1-1.5-1.1-2.8 0-1.4.7-2 .9-2.3z"></path></svg>
@@ -535,25 +521,25 @@
     </div>
 
     <div class="footer-col">
-      <h4 data-i18n="footer.linksTitle">Enlaces Rápidos</h4>
-      <a href="#home" data-i18n="nav.home">Inicio</a>
-      <a href="#services" data-i18n="nav.services">Servicios</a>
-      <a href="#about" data-i18n="nav.about">Nosotros</a>
-      <a href="#projects" data-i18n="nav.projects">Proyectos</a>
-      <a href="#contact" data-i18n="nav.contact">Contacto</a>
+      <h4 data-i18n="footer.linksTitle">Quick Links</h4>
+      <a href="#home" data-i18n="nav.home">Home</a>
+      <a href="#services" data-i18n="nav.services">Services</a>
+      <a href="#about" data-i18n="nav.about">About</a>
+      <a href="#projects" data-i18n="nav.projects">Projects</a>
+      <a href="#contact" data-i18n="nav.contact">Contact</a>
     </div>
 
     <div class="footer-col">
-      <h4 data-i18n="footer.contactTitle">Contacto</h4>
+      <h4 data-i18n="footer.contactTitle">Contact</h4>
       <a href="tel:+573008157674">+57 300 815 7674</a>
       <a href="mailto:gerencia@tringe.co">gerencia@tringe.co</a>
-      <span data-i18n="contact.info.addressValue">Cartagena y la Costa Atlántica, Colombia</span>
+      <span data-i18n="contact.info.addressValue">Cartagena and Colombia's Caribbean coast</span>
     </div>
   </div>
 
   <div class="footer-bottom">
     <div class="container">
-      <p>&copy; <span id="year"></span> Tringe. <span data-i18n="footer.rights">Todos los derechos reservados.</span></p>
+      <p>&copy; <span id="year"></span> Tringe. <span data-i18n="footer.rights">All rights reserved.</span></p>
     </div>
   </div>
 </footer>
