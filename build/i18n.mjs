@@ -10,6 +10,18 @@ export const TRANSLATIONS = {
       langLabel: "Change language"
     },
     a11y: { skip: "Skip to content" },
+    // Credibility strip under the hero. NOTE: these are conservative, verifiable
+    // figures — replace with stronger real numbers when available (years in
+    // business, total m² built, number of works delivered, repeat-client rate).
+    stats: {
+      title: "Tringe in numbers",
+      items: [
+        { value: "9",    label: "Service lines" },
+        { value: "6",    label: "Large-scale projects" },
+        { value: "4",    label: "PMI certifications" },
+        { value: "100%", label: "Safety compliance" }
+      ]
+    },
     nav: {
       home: "Home",
       services: "Services",
@@ -228,6 +240,15 @@ export const TRANSLATIONS = {
       langLabel: "Cambiar idioma"
     },
     a11y: { skip: "Saltar al contenido" },
+    stats: {
+      title: "Tringe en cifras",
+      items: [
+        { value: "9",    label: "Líneas de servicio" },
+        { value: "6",    label: "Proyectos de gran escala" },
+        { value: "4",    label: "Certificaciones PMI" },
+        { value: "100%", label: "Cumplimiento en seguridad" }
+      ]
+    },
     nav: {
       home: "Inicio",
       services: "Servicios",

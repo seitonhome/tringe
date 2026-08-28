@@ -149,6 +149,19 @@ ${list}
 </script>`;
 }
 
+function statsHtml(lang) {
+  return TRANSLATIONS[lang].stats.items
+    .map((s) =>
+      [
+        `    <div class="stat reveal">`,
+        `      <span class="stat-value">${escHtml(s.value)}</span>`,
+        `      <span class="stat-label">${escHtml(s.label)}</span>`,
+        `    </div>`,
+      ].join("\n")
+    )
+    .join("\n");
+}
+
 /* ---------- writers ---------- */
 function writeFile(relPath, contents) {
   const full = path.join(ROOT, relPath);
@@ -181,7 +194,8 @@ function buildHome(lang) {
         description: dict.seo.homeDescription,
         ogType: "website",
       })
-    );
+    )
+    .replace("{{STATS_ITEMS}}", statsHtml(lang));
 
   html = applyI18n(html, lang);
   html = markActiveLang(html, lang);

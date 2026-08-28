@@ -10,8 +10,8 @@
   --border-strong: rgba(255,255,255,0.14);
 
   --text: #f2f3f6;
-  --text-muted: #9ca0ac;
-  --text-faint: #838a9c;
+  --text-muted: #aeb3bf;
+  --text-faint: #949aa8;
 
   --blue: #2c56e0;
   --blue-light: #5b82ff;
@@ -72,8 +72,8 @@ h1,h2,h3,h4{ font-family:var(--font-head); font-weight:600; font-optical-sizing:
    ============================================================ */
 .reveal{
   opacity:0;
-  transform:translateY(24px);
-  transition:opacity .8s var(--ease), transform .8s var(--ease);
+  transform:translateY(14px);
+  transition:opacity .55s var(--ease), transform .55s var(--ease);
 }
 .reveal.is-visible{
   opacity:1;
@@ -504,7 +504,7 @@ section{ position:relative; padding:120px 0; }
 /* ============================================================
    Mission / Vision
    ============================================================ */
-.mission-vision{ background:var(--bg-alt); padding:100px 0; }
+.mission-vision{ background:var(--bg); border-top:1px solid var(--border); padding:100px 0; }
 .mv-grid{
   display:grid;
   grid-template-columns:1fr 1fr;
@@ -529,6 +529,55 @@ section{ position:relative; padding:120px 0; }
 .mv-icon svg{ width:24px; height:24px; }
 .mv-card h3{ font-size:1.3rem; margin-bottom:14px; }
 .mv-card p{ color:var(--text-muted); line-height:1.7; }
+
+/* ============================================================
+   Stats strip
+   ============================================================ */
+.stats{
+  padding:52px 0;
+  border-bottom:1px solid var(--border);
+  background:var(--bg);
+}
+.stats-grid{
+  display:grid;
+  grid-template-columns:repeat(4, 1fr);
+  gap:24px;
+}
+.stat{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  text-align:center;
+  gap:8px;
+  padding:0 12px;
+  position:relative;
+}
+.stat:not(:last-child)::after{
+  content:'';
+  position:absolute;
+  right:-12px;
+  top:50%;
+  transform:translateY(-50%);
+  width:1px;
+  height:44px;
+  background:var(--border);
+}
+.stat-value{
+  font-family:var(--font-head);
+  font-weight:600;
+  font-size:clamp(2rem, 3.4vw, 2.9rem);
+  line-height:1;
+  background:linear-gradient(100deg, var(--blue-light), var(--blue));
+  -webkit-background-clip:text;
+  background-clip:text;
+  color:transparent;
+}
+.stat-label{
+  font-size:0.82rem;
+  color:var(--text-muted);
+  line-height:1.35;
+  max-width:22ch;
+}
 
 /* ============================================================
    Clients
@@ -962,6 +1011,8 @@ a.info-value:hover{ color:var(--blue-light); }
 
   .services-grid{ grid-template-columns:1fr; }
   .projects-grid{ grid-template-columns:1fr; }
+  .stats-grid{ grid-template-columns:1fr 1fr; gap:34px 16px; }
+  .stat:nth-child(odd)::after{ display:none; }
   .values-grid{ grid-template-columns:1fr; }
   .team-grid{ grid-template-columns:1fr; }
   .mv-grid{ grid-template-columns:1fr; }
