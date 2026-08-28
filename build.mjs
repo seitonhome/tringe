@@ -37,7 +37,9 @@ const get = (obj, dotted) =>
 const abs = (p) => SITE.baseUrl.replace(/\/$/, "") + p;
 
 // Home URL for a language: "/" for the default, "/en/" otherwise.
-const homeUrl = (lang) => (langBase(lang) || "") + "/";
+// "/" for the default language, "/en" (no trailing slash) otherwise — matches
+// vercel.json trailingSlash:false so canonical/hreflang never point at a redirect.
+const homeUrl = (lang) => langBase(lang) || "/";
 // Project page URL for a language.
 const projectUrl = (lang, slug) => `${langBase(lang)}/projects/${slug}.html`;
 

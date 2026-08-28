@@ -4,14 +4,14 @@
   <url>
     <loc>https://tringe.vercel.app/</loc>
     <xhtml:link rel="alternate" hreflang="es" href="https://tringe.vercel.app/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tringe.vercel.app/en/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tringe.vercel.app/en"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://tringe.vercel.app/"/>
     <lastmod>2026-08-28</lastmod>
   </url>
   <url>
-    <loc>https://tringe.vercel.app/en/</loc>
+    <loc>https://tringe.vercel.app/en</loc>
     <xhtml:link rel="alternate" hreflang="es" href="https://tringe.vercel.app/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tringe.vercel.app/en/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tringe.vercel.app/en"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://tringe.vercel.app/"/>
     <lastmod>2026-08-28</lastmod>
   </url>
