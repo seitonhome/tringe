@@ -307,7 +307,7 @@ function build404() {
 </head>
 <body>
 <div class="nf">
-  <a href="/"><img src="/logo.png" alt="Tringe" class="nf-logo" width="480" height="480"></a>
+  <a href="/"><img src="/logo.png" alt="Tringe" class="nf-logo" width="440" height="365"></a>
   <div class="nf-code">404</div>
   <h1>${escHtml(es.title)}</h1>
   <p>${escHtml(es.text)}<br><span style="opacity:.6">${escHtml(en.text)}</span></p>
