@@ -19,7 +19,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { TRANSLATIONS } from "./build/i18n.mjs";
-import { SITE, PROJECTS, FACT_KEYS, langBase } from "./build/site.config.mjs";
+import { SITE, PROJECTS, FACT_KEYS, SOCIAL, langBase } from "./build/site.config.mjs";
 
 const ROOT = path.dirname(fileURLToPath(import.meta.url));
 const TPL = (name) => fs.readFileSync(path.join(ROOT, "templates", name), "utf8");
@@ -149,6 +149,27 @@ ${list}
 </script>`;
 }
 
+const SOCIAL_ICONS = {
+  WhatsApp:
+    '<path d="M3 21l1.5-4.5A8 8 0 1 1 8 19.5z"></path><path d="M8.5 9c.3-.7.9-.6 1.4-.6.4 0 .6.1.8.5.2.5.7 1.7.7 1.9.1.2.1.4 0 .6-.2.4-.4.5-.6.8-.2.2-.4.4-.2.8.6 1 1.3 1.7 2.3 2.3.4.2.6.2.9-.1.3-.3.7-.9 1-1.2.2-.2.4-.2.7-.1.6.3 1.8.9 2 1 .3.1.5.2.5.4.1.5.1.9-.1 1.4-.3.6-1.5 1.1-2.1 1.2-.6.1-1.2.2-3.7-.8-2.9-1.2-4.7-4.1-4.9-4.3-.1-.2-1.1-1.5-1.1-2.8 0-1.4.7-2 .9-2.3z"></path>',
+  Facebook:
+    '<path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>',
+  Instagram:
+    '<rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.5" y2="6.5"></line>',
+};
+
+function socialHtml() {
+  const svg = (name) =>
+    `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">${SOCIAL_ICONS[name]}</svg>`;
+  return SOCIAL.map((s) => {
+    if (s.url) {
+      return `        <a href="${s.url}" target="_blank" rel="noopener" class="social-icon" aria-label="${escAttr(s.name)}">\n          ${svg(s.name)}\n        </a>`;
+    }
+    // No URL yet — render the icon but not as a link.
+    return `        <span class="social-icon social-icon--soon" role="img" aria-label="${escAttr(s.name)}" title="${escAttr(s.name)}">\n          ${svg(s.name)}\n        </span>`;
+  }).join("\n");
+}
+
 function statsHtml(lang) {
   return TRANSLATIONS[lang].stats.items
     .map((s) =>
@@ -195,7 +216,8 @@ function buildHome(lang) {
         ogType: "website",
       })
     )
-    .replace("{{STATS_ITEMS}}", statsHtml(lang));
+    .replace("{{STATS_ITEMS}}", statsHtml(lang))
+    .replaceAll("{{SOCIAL}}", socialHtml());
 
   html = applyI18n(html, lang);
   html = markActiveLang(html, lang);
@@ -227,7 +249,8 @@ function buildProject(project, lang) {
     )
     .replace("{{BREADCRUMB}}", breadcrumbJsonLd(project, lang))
     .replace("{{FACTS}}", factsHtml(project, lang))
-    .replace("{{MORE_PROJECTS}}", moreProjectsHtml(project, lang));
+    .replace("{{MORE_PROJECTS}}", moreProjectsHtml(project, lang))
+    .replaceAll("{{SOCIAL}}", socialHtml());
 
   html = applyI18n(html, lang);
   html = markActiveLang(html, lang);

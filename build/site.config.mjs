@@ -22,6 +22,15 @@ export const PROJECTS = [
   { slug: "puerto-velero",       key: "puertovelero", facts: ["category", "area", "role", "location"] },
 ];
 
+// Social links shown in the footer + contact block.
+// Put the real URL to turn an icon into a working link; leave it "" and the
+// icon still renders (as a non-clickable placeholder) so the row stays visible.
+export const SOCIAL = [
+  { name: "WhatsApp",  url: "https://wa.me/573008157674" },
+  { name: "Facebook",  url: "" },
+  { name: "Instagram", url: "" },
+];
+
 // fact name -> [ label i18n key, value i18n key suffix ]
 export const FACT_KEYS = {
   category: ["projectPage.factLabels.category", "cat"],

@@ -864,6 +864,10 @@ a.info-value:hover{ color:var(--blue-light); }
 .social-icon svg{ width:18px; height:18px; }
 .social-icon:hover{ color:#fff; border-color:var(--blue-light); background:rgba(91,130,255,0.12); transform:translateY(-3px); }
 
+/* Social icons with no URL yet — visible but inert */
+.social-icon--soon{ cursor:default; opacity:0.5; }
+.social-icon--soon:hover{ color:var(--text-muted); border-color:var(--border-strong); background:transparent; transform:none; }
+
 .contact-form{
   background:var(--surface);
   border:1px solid var(--border);
